@@ -47,7 +47,7 @@ make
 
 <table> <tr><td width=33% valign=top>
 
-- [Hello World 示例](#Hello World)
+- [Hello World 示例](#Hello-World)
 - [运行包含多个文件的项目文件夹](#运行包含多个文件的项目文件夹)
 - [注释](#注释)
 - [函数](#函数)
@@ -78,8 +78,8 @@ make
 - 语句和表达式
   - [If](#if)
   - [Match](#Match)
-  - [In 操作符](#In 操作符)
-  - [For 循环](#For 循环)
+  - [In 操作符](#In-操作符)
+  - [For 循环](#For-循环)
   - [Defer](#defer)
   - [Goto](#goto)
 - 结构体
@@ -100,103 +100,103 @@ make
 </td><td valign=top>
 
 - 函数 2
-  - [默认不可变函数参数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#默认不可变函数参数)
-  - [可变参数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#可变参数)
-  - [可变数量的参数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#可变数量的参数)
-  - [匿名和高阶函数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#匿名和高阶函数)
-  - [闭包](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#闭包)
-  - [参数评估顺序](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#参数评估顺序)
-- [引用](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#引用)
+  - [默认不可变函数参数](#默认不可变函数参数)
+  - [可变参数](#可变参数)
+  - [可变数量的参数](#可变数量的参数)
+  - [匿名和高阶函数](#匿名和高阶函数)
+  - [闭包](#闭包)
+  - [参数评估顺序](#参数评估顺序)
+- [引用](#引用)
 - 常量
-  - [需要模块前缀](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#需要模块前缀)
+  - [需要模块前缀](#需要模块前缀)
 - 内置函数
-  - [println](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#println)
-  - [打印自定义类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#打印自定义类型)
-  - [运行时转储表达式](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#运行时转储表达式)
+  - [println](#println)
+  - [打印自定义类型](#打印自定义类型)
+  - [运行时转储表达式](#运行时转储表达式)
 - 模块
-  - [创建模块](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#创建模块)
-  - [init 函数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#init-函数)
+  - [创建模块](#创建模块)
+  - [init 函数](#init-函数)
 
 </td></tr> <tr><td width=33% valign=top>
 
 - 类型声明
-  - [类型别名](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#类型别名)
-  - [枚举](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#枚举)
-  - [函数类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#函数类型)
-  - [接口](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#接口)
-  - [和类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#和类型)
+  - [类型别名](#类型别名)
+  - [枚举](#枚举)
+  - [函数类型](#函数类型)
+  - [接口](#接口)
+  - [和类型](#和类型)
   - Option/Result 类型和错误处理
     - [处理 Option/Result](#处理-optionresult)
-  - [自定义错误类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#自定义错误类型)
+  - [自定义错误类型](#自定义错误类型)
   - [泛型](#泛型)
 - 并发
-  - [生成并发任务](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#生成并发任务)
-  - [通道](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#通道)
-  - [共享对象](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#共享对象)
+  - [生成并发任务](#生成并发任务)
+  - [通道](#通道)
+  - [共享对象](#共享对象)
 - JSON
-  - [解析 JSON](#解析 Json)
-  - [编码 JSON](#编码 Json)
+  - [解析 JSON](#解析-Json)
+  - [编码 JSON](#编码-Json)
 - 测试
-  - [断言](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#断言)
-  - [带额外信息的断言](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#带额外信息的断言)
-  - [不会中断程序的断言](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#不会中断程序的断言)
-  - [测试文件](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#测试文件)
-  - [运行测试](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#运行测试)
+  - [断言](#断言)
+  - [带额外信息的断言](#带额外信息的断言)
+  - [不会中断程序的断言](#不会中断程序的断言)
+  - [测试文件](#测试文件)
+  - [运行测试](#运行测试)
 - 内存管理
-  - [控制](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#控制)
-  - [栈和堆](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#栈和堆)
-- [ORM](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#orm)
+  - [控制](#控制)
+  - [栈和堆](#栈和堆)
+- [ORM](#orm)
 - 编写文档
-  - [文档注释中的换行符](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#文档注释中的换行符)
+  - [文档注释中的换行符](#文档注释中的换行符)
 
 </td><td width=33% valign=top>
 
 - 工具
-  - [v fmt](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#v-fmt)
-  - [v shader](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#v-shader)
-  - [性能分析](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#性能分析)
+  - [v fmt](#v-fmt)
+  - [v shader](#v-shader)
+  - [性能分析](#性能分析)
 - 包管理
-  - [包命令](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#包命令)
-  - [发布包](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#发布包)
+  - [包命令](#包命令)
+  - [发布包](#发布包)
 - 高级主题
-  - [属性](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#属性)
+  - [属性](#属性)
   - 条件编译
-    - [编译时伪变量](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#编译时伪变量)
-    - [编译时反射](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#编译时反射)
-    - [编译时代码](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#编译时代码)
-    - [编译时类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#编译时类型)
-    - [特定环境的文件](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#特定环境的文件)
-  - [不安全的内存操作](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#不安全的内存操作)
-  - [包含引用字段的结构体](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#包含引用字段的结构体)
-  - [sizeof 和__offsetof](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#sizeof-和__offsetof)
-  - [有限的操作符重载](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#有限的操作符重载)
-  - [性能优化](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#性能优化)
-  - [原子操作](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#原子操作)
-  - [全局变量](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#全局变量)
-  - [交叉编译](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#交叉编译)
+    - [编译时伪变量](#编译时伪变量)
+    - [编译时反射](#编译时反射)
+    - [编译时代码](#编译时代码)
+    - [编译时类型](#编译时类型)
+    - [特定环境的文件](#特定环境的文件)
+  - [不安全的内存操作](#不安全的内存操作)
+  - [包含引用字段的结构体](#包含引用字段的结构体)
+  - [sizeof 和__offsetof](#sizeof-和__offsetof)
+  - [有限的操作符重载](#有限的操作符重载)
+  - [性能优化](#性能优化)
+  - [原子操作](#原子操作)
+  - [全局变量](#全局变量)
+  - [交叉编译](#交叉编译)
   - 调试
-    - [默认的 C 后端二进制文件](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#默认的-c-后端二进制文件)
-    - [原生后端二进制文件](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#原生后端二进制文件)
-    - [Javascript 后端](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#javascript-后端)
+    - [默认的 C 后端二进制文件](#默认的-c-后端二进制文件)
+    - [原生后端二进制文件](#原生后端二进制文件)
+    - [Javascript 后端](#javascript-后端)
 
 </td><td valign=top>
 
 - V 和 C
-  - [在 V 中调用 C](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#在-v-中调用-c)
-  - [在 C 中调用 V](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#在-c-中调用-v)
-  - [传递 C 编译标志](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#传递-c-编译标志)
-  - [#pkgconfig](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#pkgconfig)
-  - [包含 C 代码](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#包含-c-代码)
-  - [C 类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#c-类型)
-  - [C 声明](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#c-声明)
-  - [导出到共享库](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#导出到共享库)
-  - [将 C 转换为 V](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#将-c-转换为-v)
-  - [解决 C 问题](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#解决-c-问题)
+  - [在 V 中调用 C](#在-v-中调用-c)
+  - [在 C 中调用 V](#在-c-中调用-v)
+  - [传递 C 编译标志](#传递-c-编译标志)
+  - [#pkgconfig](#pkgconfig)
+  - [包含 C 代码](#包含-c-代码)
+  - [C 类型](#c-类型)
+  - [C 声明](#c-声明)
+  - [导出到共享库](#导出到共享库)
+  - [将 C 转换为 V](#将-c-转换为-v)
+  - [解决 C 问题](#解决-c-问题)
 - V 的其他特性
-  - [内联汇编](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#内联汇编)
-  - [热代码重载](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#热代码重载)
-  - [V 中的跨平台 shell 脚本](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#v-中的跨平台-shell-脚本)
-  - [无扩展名的 Vsh 脚本](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#无扩展名的-vsh-脚本)
+  - [内联汇编](#内联汇编)
+  - [热代码重载](#热代码重载)
+  - [V 中的跨平台 shell 脚本](#v-中的跨平台-shell-脚本)
+  - [无扩展名的 Vsh 脚本](#无扩展名的-vsh-脚本)
 - 附录
   - [附录一：关键字](#附录一：关键字)
   - [附录二：操作符](#附录二：操作符)
@@ -225,7 +225,7 @@ fn main() {
 
 和 C、Go 以及 Rust 一样,`main` 是程序的入口点。
 
-[`println`](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#println) 是少数的[内置函数](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#内置函数)之一。 它会将传递给它的值打印到标准输出。
+[`println`](#println) 是少数的[内置函数](#内置函数)之一。 它会将传递给它的值打印到标准输出。
 
 对于单文件的程序,可以省略 `fn main()` 声明。这在编写小程序、"脚本"或刚学习语言时很有用。 为了简洁起见,本教程将跳过 `fn main()`。
 
@@ -322,11 +322,11 @@ fn private_function() {
 }
 ```
 
-函数默认是私有的(不导出)。要让其他[模块](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#模块导入)可以使用它们,在前面加上 `pub`。 这同样适用于[结构体](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#结构体)、[常量](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#常量)和[类型](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#类型声明)。
+函数默认是私有的(不导出)。要让其他[模块](#模块导入)可以使用它们,在前面加上 `pub`。 这同样适用于[结构体](#结构体)、[常量](#常量)和[类型](#类型声明)。
 
 > **注意** 
 >
-> `pub` 只能在命名模块中使用。关于创建模块的信息,请参阅[模块](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#模块)。
+> `pub` 只能在命名模块中使用。关于创建模块的信息,请参阅[模块](#模块)。
 
 ## 变量
 
@@ -345,7 +345,7 @@ println(large_number)
 
 与大多数其他语言不同,V 只允许在函数中定义变量。
 
-默认不允许**全局变量**。有关详细信息,请参阅[全局变量](https://claude.ai/chat/cb555d3c-ad3b-4127-8dc2-c178bfb990e0#全局变量)。
+默认不允许**全局变量**。有关详细信息,请参阅[全局变量](#全局变量)。
 
 为了在不同代码库之间保持一致性,所有变量和函数名称必须使用 `snake_case` 风格,与类型名称不同,类型名称必须使用 `PascalCase`。
 
